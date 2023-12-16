@@ -1,0 +1,126 @@
+<%@page import="ar.com.integrador.domain.Orador"%>
+<%@page import="java.util.List"%>
+
+<!doctype html>
+<html lang="es">
+
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+	  
+	  <title>Trabajo Integrador</title>
+		<style>
+		    body{
+		        height:100vh;
+		        display: grid;
+		        grid-template-rows: 10% 75% 15%;
+		        grid-template-areas: "header"
+		                             "main"
+		                             "footer";  
+		
+		    }
+		    header{
+		        grid-area: header;
+		        
+		    }
+		    main{
+		   	
+		        grid-area: main;
+		        overflow: auto;
+				margin-top:10vh;
+		    }
+		    footer{
+		        grid-area: footer;
+		      
+		      
+		    }
+		  </style>
+	</head>
+	
+	<body>
+	
+		 <header class="header"> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid justify-content-between">
+                <a href="#" class="col-8 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center">
+                    <img src="assets/img/logo_cac.png" alt="Logo de Codo a Codo 4.0" class="imgLogo" loading="lazy" />
+                    <h2 class="colorWhite fs-1">Conf Bs As</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="col-4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end flex-wrap align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-2 p-3" aria-current="page" href="#conference">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="#speakers">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="#placeAndDate">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="#speakerForm">Convi�rtete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorGreen fs-2 p-3" href="./pages/tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  
+    </header>
+		
+		
+		<main>
+			<section class="container mt-5 mb-4" id="restoOradores">
+		        <h2 class="titulo-gral">Conoce todos los oradores que se presentan</h2>
+		      
+		        <div class="row">
+		            <table class="table">
+		                <thead>
+		                  <tr>
+		                    <th scope="col">#</th>
+		                    <th scope="col">Nombre</th>
+		                    <th scope="col">Apellido</th>
+		                    <th scope="col">Tema</th>
+		                  </tr>
+		                </thead>
+		                 <% 
+						  	//codigo java
+						  	//obtener el listado desde el request
+						  	//se guardo bajo el nombre de "listado"
+						  	List<Orador> listado = (List<Orador>)request.getAttribute("listado");
+					 	 %>
+		                <tbody>
+			                 <!-- ESTO SE REPITE TANTA CANDTIDAD DE VECES COMO ARTICULOS TENGA -->
+						   <%
+						   	for( Orador  unOrador : listado) {
+						   %>
+		                  <tr>
+		                    <th scope="row"><%=unOrador.getId()%></th>
+		                    <td><%=unOrador.getNombre() %></td>
+		                    <td><%=unOrador.getApellido() %></td>
+		                    <td><%=unOrador.getTema() %></td>
+		                  </tr>
+		                   <%
+					   		}
+					  	   %>
+		                </tbody>
+		              </table>
+		        </div>
+
+    	  </section>
+	
+		
+		</main>
+		
+		<!-- aca va el footer.jsp -->
+		<jsp:include page="footer.jsp"/>

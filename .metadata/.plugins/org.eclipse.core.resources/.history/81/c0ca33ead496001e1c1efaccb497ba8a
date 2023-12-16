@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800&family=Noto+Sans+Bengali&family=Noto+Sans+JP:wght@100;200;300;400&family=Noto+Sans+NKo+Unjoined:wght@400;500;600&family=Noto+Sans+Shavian&family=Noto+Sans+Syriac+Eastern:wght@100;200;400;500;600&family=Onest:wght@100&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100&display=swap');
+
+.bg-image {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #00000080, #00000080), url(../assets/imagen/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tamañoLogo {
+    height: 70px;
+}
+.anchoNav {
+    width: 100vh;
+}
+.itemComprarTickets {
+    color: rgb(40, 171, 68) !important;
+}
+.colorWhite {
+    color: rgb(240, 240, 240);
+}
+.colorGrey {
+    color: rgb(175, 174, 174);
+}
+.colorGreen {
+    color: rgb(40, 171, 68);
+}
+.colorCeleste {
+    background-color: rgb(23, 162, 184);
+    color: white;
+}
+.colorAmarillo {
+    background-color: rgb(254, 193, 7);
+    color: black;
+}
+.colorGris {
+    background-color: rgb(108, 117, 126);
+    color: white;
+}
+.colorRojo {
+    background-color: rgb(220, 53, 71);
+    color: white;
+}
+.fuente {
+    font-family: 'Open Sans', sans-serif;
+}
+.filaConferencia {
+    text-align: center;
+    height: 100%;
+}
+.textoConf {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.conferenciaTexto {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+}
+.contenedorTextoConf {
+    text-align: center;
+    padding-top: 30%;
+    width: 100%;
+}
+.alturaContenedor {
+    height: 98vh;
+}
+.anclaConferencia {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.botonOrador {
+    margin-top: 0.3rem;
+    color: rgb(243, 236, 236);
+    border: 1px solid rgb(173, 146, 146);
+    border-radius: 3px;
+    padding: 8px;
+    margin-right: 10px;
+}
+.anclaDecoration {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.botonTickets {
+    background-color: rgb(40, 167, 68);
+    text-decoration: none;
+    margin-top: 0.3rem;
+    color: rgb(243, 236, 236);
+    border-radius: 3px;
+    padding: 8px;
+    padding-bottom: 5px;
+}
+.divConferenciaTexto {
+    height: 55vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    justify-content: center;
+    padding-right: 50px;
+}
+.contenedorOradores {
+    text-align: center;
+}
+.columnaTarjeta {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.columnaTarjeta img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 0.5rem;
+}
+.cuerpoTarjeta H3 {
+    margin-top: 0.3rem;
+}
+.oradores h2 {
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    padding-top: 20px;
+}
+.titOradores {
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.cuerpoTarjetaH4 {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 2px;
+}
+.tituloNombre {
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center
+}
+.parrafoTarjeta {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.textoLugarFecha {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(51, 58, 64);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.divAncla{
+    text-align: center;
+}
+.h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+.p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.a {
+    font-weight: 200;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    color: rgb(243, 236, 236);
+    border: 1px solid rgb(243, 236, 236);
+    border-radius: 3px;
+    padding: 4px;
+    
+}
+.footer {
+    background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.bg-gradiente {
+    background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
+}
+.ul {
+    height: 100%;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 0;
+}
+.estiloInput {
+    border: 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.linkDiv {
+    text-align: center;
+}
+.btn-colorGreen {
+    color: #fff;
+    background-color: rgb(40, 171, 68);
+    border-color: rgb(40, 171, 68);
+}
+.colorBtnInput {
+    color: #fff;
+    background-color: rgb(150, 201, 62);
+    border-color: rgb(150, 201, 62);
+    width: 100%;
+}
+.contenedorTarjetas {
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;   
+    justify-content: center;
+    align-items: center;
+     
+}
+.filaTarjetas{
+    padding: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.columnasTarjetas {
+    width:50%;
+    margin: 1rem;
+}
+.tarjetaEstudiante{
+    border: 2px solid rgb(0, 123, 255);
+}
+.tarjetaTrainee{
+    border: 2px solid rgb(23, 162, 184);
+}
+.tarjetaJunior{
+    border: 2px solid rgb(255, 193, 7);
+}
+.tarjetasH2,.tarjetasH3, .tarjetasP {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.tarjetasH2 {
+    font-weight: 600;
+}
+.tarjetasH3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.tarjetasH3Descuento{
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+.tarjetaP{
+    color: gray;
+   font-size: 1rem; 
+}
+.containerTickets{
+    width: 50vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.anchoFila {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.tamañoInputForm{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.divCategoriaForm{
+    text-align: center;
+}
+.colorBtnForm {
+    color: #fff;
+    background-color: rgb(150, 201, 62);
+    border-color: rgb(150, 201, 62);
+    width: 100%;
+}
+.bgFondo{
+    background-color: rgb(204, 229, 255);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:rgb(23, 84, 142)
+}
+.divBloque{
+    display: block;
+}
+.containerMain{
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        margin-left: 22%;
+    }
+    .contenedorNav {
+        padding-left: 4%;
+    }
+    .contenedorTextoConf {
+        width: 42%;
+        text-align: end;
+        margin-left: 0;
+        font-size: 1rem;
+        margin-left: 50%;
+        padding-top: 20%;
+    }
+    .tituloConf {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .parrafoConf {
+        font-size: 16px;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .divAnclas {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .botonOrador {
+        margin-top: 0.3rem;
+        color: rgb(243, 236, 236);
+        border: 1px solid rgb(173, 146, 146);
+        border-radius: 3px;
+        padding: 8px;
+        margin-right: 10px;
+    }
+    .anclaConferencia {
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+    }
+    .botonTickets {
+        background-color: rgb(40, 167, 68);
+        text-decoration: none;
+        margin-top: 0.3rem;
+        color: rgb(243, 236, 236);
+        border-radius: 3px;
+        padding: 8px;
+        padding-bottom: 5px;
+        width: 23vh;
+        text-align: center;
+    }
+    .sectionOradores {
+        height: 89vh;
+    }
+    .titSuperior {
+        font-size: 0.7rem;
+        padding-bottom: 0.2rem;
+    }
+    .titInferior {
+        font-size: 1.7rem;
+    }
+    .containerOradores {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .divFila {
+        width: 80%;
+        column-gap: 1rem;
+        flex-wrap: nowrap;
+        height: 90%;
+    }
+    .columnaTarjeta {
+        text-align: start;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .oradores h2 {
+        font-family: 'Noto Sans Syriac Eastern', sans-serif;
+        padding-top: 20px;
+        text-align: start;
+    }
+    .titOradores {
+        font-family: 'Noto Sans Syriac Eastern', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: start;
+    }
+    .cuerpoTarjeta {
+        margin-top: 1rem;
+    }
+    .cuerpoTarjetaH4 {
+        font-family: 'Gabarito', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-right: 5px;
+        padding: 2px;
+        text-align: start;
+    }
+    .tituloNombre {
+        font-size: 1rem;
+        font-weight: 800;
+        text-align: start;
+    }
+    .parrafoTarjeta {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+        text-align: start;
+    }
+    .columna1 {
+        border-top: 2px solid rgb(183, 181, 181);
+        border-right: 1px solid rgb(183, 181, 181);
+    }
+    .textoLugarFecha {
+        font-family: 'Noto Sans Syriac Eastern', sans-serif;
+        border-top: 2px solid rgb(183, 181, 181);
+    }
+    .h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .p {
+        font-weight: 400;
+        font-size: 0.76rem;
+        line-height: 1.5rem;
+    }
+    .divAncla {
+        position: relative;
+        right: 44%;
+    }
+    .tamañoConteiner {
+        height: 20vh;
+    }
+    .anchoFila {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .tamañoFuente {
+        font-size: 0.7rem;
+    }
+    .tamañoFuenteInput {
+        font-size: 1px;
+    }
+    .tamañoFuenteParrafo {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    .tamañoBtn {
+        width: 100%;
+        height: 30px;
+    }
+    .estiloInput {
+        width: 100%;
+        border: 0;
+        font-size: 0.8rem;
+    }
+    .colorBtnInput {
+        padding-bottom: 2rem;
+    }
+    .footer {
+        background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
+        height: 14vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .containerNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+        padding-top: 1rem;
+    }
+    .ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    .linkNavFooter {
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .contenedorTarjetas{
+        padding-top: 6rem;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .filaTarjetas{
+        width: 100%;
+        flex-wrap: nowrap;
+        text-align: center;
+        column-gap: 0.3rem;
+        margin-top: 1rem;
+        margin-left: 0 !important;
+    }
+    .columnasTarjetas{
+        width: 18%;
+        margin: 0;
+    }
+    .containerTickets{
+        height: 70vh;
+        width: 850px;
+        align-items: center;
+        justify-content: center;
+    }
+    .anchoFila{
+        height: 90%;
+        width: 80%;
+        width: 100vh;
+        width: 90%;
+        align-items: center;
+    }
+    .tamañoFuenteTicket{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .divSpanForm {
+        width: 95%;
+    }
+    .tamañoInputForm {
+        width: 50%;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 1px;
+    }
+    .divInputInf{
+        margin-bottom: 0;
+    }
+    .colorBtnForm {
+        color: #fff;
+        background-color: rgb(150, 201, 62);
+        border-color: rgb(150, 201, 62);
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,109 @@
+<%@page import="ar.com.integrador.domain.Orador"%>
+<%@page import="java.util.List"%>
+
+<!doctype html>
+<html lang="es">
+
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	  <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/styles.css">
+	  <link rel="shortcut icon" href="./img/codoacodo-min.png" type="image/x-icon">
+	
+	  <title>Trabajo Integrador</title>
+	  <style>
+		    body{
+		        height:100vh;
+		        display: grid;
+		        grid-template-rows: 10% 75% 15%;
+		        grid-template-areas: "header"
+		                             "main"
+		                             "footer";  
+		
+		    }
+		    header{
+		        grid-area: header;
+		    }
+		    main{
+		        grid-area: main;
+		        overflow: auto;
+		    }
+		    footer{
+		        grid-area: footer;
+		      
+		    }
+		  </style>
+	</head>
+	<body>
+	
+		<header>
+		    <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid justify-content-between">
+                <a href="#" class="col-8 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center">
+                    <img src="./assets/img/logo_cac.png" alt="Logo de Codo a Codo 4.0" class="imgLogo" loading="lazy" />
+                    <h2 class="colorWhite fs-1">Conf Bs As</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="col-4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end flex-wrap align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-2 p-3" aria-current="page" href="#conference">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="#speakers">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="#placeAndDate">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 p-3" href="#speakerForm">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link colorGreen fs-2 p-3" href="tickets.jsp">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		</header>
+		
+		<main class="d-flex justify-content-center align-items-center">
+		 <section class="mt-5 container" id="form-orador">
+		        <div class="row justify-content-center">
+		            <div class="col-lg-8 col-xl-7">
+		                <h2 class="titulo-gral mb-3">LogIn</h2>
+		                
+		                <form action="<%=request.getContextPath()%>/LoginAdminController" method="POST">
+		                    <div class="row justify-content-center">
+		                        <div class="col-8 mb-3 mb-4">
+		                            <input type="text" class="form-control" name="nombre" placeholder="Usuario" aria-label="Nombre" required>
+		                            
+		                        </div>
+		                         <div class="col-8 mb-3 mb-4">
+		                           <input type="password" class="form-control" name="password" placeholder="Contraseña" aria-label="Password" required>
+		                         </div>
+		                    </div>
+		                    <div class="row justify-content-center">
+		                        <div class="col-8 mb-3">
+		                            <div class="d-grid">
+		                                <button type="submit" class="btn btn-lg btn-form">LogIn</button>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </form>
+		            </div>
+		        </div>
+		    </section>
+		
+		</main>
+		
+			<!-- aca va el header.jsp -->
+		<jsp:include page="footer.jsp"/>
+		
+		

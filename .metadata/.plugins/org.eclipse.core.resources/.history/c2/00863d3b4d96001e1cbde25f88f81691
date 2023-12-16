@@ -1,0 +1,21 @@
+
+	<footer class="bg-gradiente footer">
+        <nav class="container-fluid fs-6  text-center containerNav  ">
+            <ul class="ul row justify-content-center align-items-center ">
+                <li class="col-4 col-md-1 text-center p-3  linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Preguntas frecuentes</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Contáctanos</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Prensa</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Conferencias</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Términos y condiciones</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Privacidad</a></li>
+                <li class="col-4 col-md-1 text-center p-3 linkNavFooter"><a class="anclaDecoration colorWhite"
+                        href="#inicio">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>

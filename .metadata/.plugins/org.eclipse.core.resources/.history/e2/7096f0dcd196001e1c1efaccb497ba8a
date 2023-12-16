@@ -1,0 +1,143 @@
+<%@page import="ar.com.integrador.domain.Orador"%>
+<%@page import="java.util.List"%>
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador Front | Constanza Rojas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+<!-- aca va el header.jsp -->
+		 <jsp:include page="header.jsp"/>
+  
+    <main class="container-fluid  fuente">
+
+        <section class=" sectionOradores mb-0 mt-4 " id="oradores">
+            <h2 class="text-center">
+                <div class="titSuperior  fw-normal">CONOCE A LOS</div>
+                <div class="titInferior ">ORADORES</div>
+            </h2>
+            <div class="container containerOradores">
+                <div class="row divFila">
+                    <div class="col-md-4 border border rounded 2 columnaTarjeta">
+                        <img src="./assets/imagen/steve.jpg" class="objet-fit-cover " alt="Steve Jobs" loading="lazy">
+                        <div class="cuerpoTarjeta m-2  ">
+                            <h4 class="colorAmarillo d-inline cuerpoTarjetaH4 ">JavaScript</h4>
+                            <h4 class="colorCeleste d-inline cuerpoTarjetaH4">React</h4>
+                            <h3 class="tituloNombre">Steve Jobs</h3>
+                            <p class="parrafoTarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                                accusamus
+                                incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident
+                                voluptatibus
+                                autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 border border rounded 2 columnaTarjeta">
+                        <img src="./assets/imagen/bill.jpg" class="objet-fit-cover" alt="Bill Gates" loading="lazy">
+                        <div class="cuerpoTarjeta m-2 ">
+                            <h4 class="colorAmarillo d-inline cuerpoTarjetaH4">JavaScript</h4>
+                            <h4 class="colorCeleste d-inline cuerpoTarjetaH4">React</h4>
+                            <h3 class="tituloNombre">Bill Gates</h3>
+                            <p class="parrafoTarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                                accusamus
+                                incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident
+                                voluptatibus
+                                autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 border border rounded 2 columnaTarjeta">
+                        <img src="./assets/imagen/ada.jpeg" class="objet-fit-cover" alt="Ada Lovelace" loading="lazy">
+                        <div class="cuerpoTarjeta m-2 ">
+                            <h4 class="colorGris d-inline cuerpoTarjetaH4">Negocios</h4>
+                            <h4 class="colorRojo d-inline cuerpoTarjetaH4">Startups</h4>
+                            <h3 class="tituloNombre">Ada Lovelace</h3>
+                            <p class="parrafoTarjeta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                                accusamus
+                                incidunt nam, perferendis blanditiis atque voluptates praesentium temporibus provident
+                                voluptatibus
+                                autem ullam sunt assumenda iste corrupti veritatis accusantium nemo ex.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="h-80vh" id="lugarFecha">
+            <div class="row h-100 lugarFecha">
+                <div class="col-12 col-md-6 gx-0 columna1"><img src="./assets/imagen/honolulu.jpg" class="img-fluid"
+                        alt=""></div>
+                <div class="col-12 col-md-6 textoLugarFecha">
+                    <h2 class="h2">Bs As - Octubre</h2>
+                    <p class="p">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
+                        Estados Unidos.
+                        Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de
+                        Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el
+                        condado de
+                        Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600
+                        km2 de
+                        superficie).</p>
+                    <div class="divAncla">
+                        <a class="a" href="">Conocé más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container tamañoContainer my-4" id="formularioOrador">
+            <div>
+                <div class="text-center">
+
+                    <div class=" fw-normal tamañoInput">
+                        <h2 class="tamañoFuente">CONVIÉRTETE EN UN</h2>
+                    </div>
+                    <h2 class="fs-2 fw-bold">ORADOR</h2>
+
+                    <p class="tamañoFuenteParrafo">Anótate como orador para dar una charla ignite. Cuéntanos de qué
+                        quieres
+                        hablar!
+                    </p>
+                </div>
+            </div>
+            <form class="row  anchoFila form-control-md h-50" action="">
+
+                <div class="col-12 col-md-6 mb-3">
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <input class="form-control" type="text" id="surname" name="surname" placeholder="Apellido" required>
+                </div>
+                </div>
+                <div class="col-12 mb-1 ">
+                    <textarea class="form-control" name="comentario" id="comentario" cols="30" rows="4"
+                        placeholder="Sobre qué quieres hablar?" required></textarea>
+                </div>
+                <div>
+                    <input class="estiloInput estiloInput" disabled readonly
+                        value="Recuerda incluir un título para tu charla" type="text" name=""
+                        placeholder="Recuerda incluir un título para tu charla">
+                    <p class="text-center"></p>
+                </div>
+                <div class="">
+                    <button class="btn colorBtnInput tamañoBtn" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+   
+    
+    <!-- aca va el footer.jsp -->
+		 <jsp:include page="footer.jsp"/>
+    
